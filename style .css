@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    align-items: center;
+    justify-items: center;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 200px;
+}
+
+.coll {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:30px;
+
+    
+}
+.row {
+    text-align: justify;
+}
+.row h1 {
+ text-transform: uppercase;
+ margin-bottom: 30px;
+ font-size: 40px;
+ color:dimgray;
+}
+.row h1 span {
+    font-size: 50px;
+    color: burlywood;
+}
+
+.row p {
+    font-size: 20px;
+    color: deeppink;
+}
+.coll-10 {
+    border: 2px solid red;
+    padding: 30px 30px;
+    
+}
+.coll-10 a {
+    display:inline-block;
+    margin: 20px;
+    font-size: 18px;
+    padding: 10px 30px;
+    background-color: coral;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor:pointer ;
+   text-transform: uppercase;
+}
+.coll-10 a:hover{
+    background-color: cyan;
+    color: red;
+}
+
+@media only screen and (max-width: 688px){
+    .container{
+        display:block;
+        gap: 10px;
+       
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    .coll {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap:10px;
+        margin-top: 20px;
+    
+        
+    }
+
+}
+@media only screen and (min-width: 689px) and (max-width: 1000px){
+    .container{
+        display:block;
+        gap: 10px;
+       
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    .coll {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap:10px;
+        margin-top: 20px;
+    
+        
+    }
+}
